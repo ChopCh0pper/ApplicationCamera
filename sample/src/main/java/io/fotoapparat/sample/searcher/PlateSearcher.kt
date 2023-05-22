@@ -8,7 +8,7 @@ class PlateSearcher(
     val plateDetector: PlateDetector,
     val onPlateFoundListener: (String) -> Unit
 ) {
-    private val thread = HandlerThread("plateSearcher").apply { run() }
+    private var thread = HandlerThread("plateSearcher").apply { start() }
     private val handler = Handler(thread.looper)
 
     private fun iterate(): Runnable = Runnable {
@@ -28,7 +28,7 @@ class PlateSearcher(
     }
 
     fun startLooking() {
-        thread.start()
+        thread = HandlerThread("plateSearcher").apply { start() }
         oneMoreTime()
     }
 

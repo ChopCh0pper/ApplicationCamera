@@ -67,7 +67,6 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         searher.startLooking()
-
     }
 
 //    private fun takePicture(): () -> Unit = {
@@ -131,7 +130,9 @@ private sealed class Camera(
                     flashMode = off(),
                     focusMode = firstAvailable(
                             continuousFocusPicture(),
-                            autoFocus()
+                            autoFocus(),
+                            fixed(),
+                            infinity()
                     ),
                     frameProcessor = {
                         // Do something with the preview frame

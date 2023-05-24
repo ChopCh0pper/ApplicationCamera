@@ -6,57 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".ResultActivity">
 
-    <TextView
-        android:id="@+id/tvCarBrand"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:text="ppp"
-        android:textColor="@color/colorBlack"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvNumber"
-        app:layout_constraintTop_toBottomOf="@id/tvCarBrand"
-        app:layout_constraintLeft_toLeftOf="@id/tvCarBrand"
-        android:text="@string/number"
-        android:textSize="18dp"
-        android:textColor="@color/colorBlack"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvProdactionYear"
-        app:layout_constraintTop_toBottomOf="@id/tvNumber"
-        app:layout_constraintLeft_toLeftOf="@id/tvCarBrand"
-        android:text="@string/production_year"
-        android:textSize="18dp"
-        android:textColor="@color/colorBlack"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvCategory"
-        app:layout_constraintTop_toBottomOf="@id/tvProdactionYear"
-        app:layout_constraintLeft_toLeftOf="@id/tvCarBrand"
-        android:text="@string/category"
-        android:textSize="18dp"
-        android:textColor="@color/colorBlack"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvSteeringWheelPosition"
-        app:layout_constraintTop_toBottomOf="@id/tvCategory"
-        app:layout_constraintLeft_toLeftOf="@id/tvCarBrand"
-        android:text="@string/steering_wheel_position"
-        android:textSize="18dp"
-        android:textColor="@color/colorBlack"/>
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webView"/>
 
 
 

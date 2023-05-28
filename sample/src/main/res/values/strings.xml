@@ -1,7 +1,11 @@
 <resources>
     <string name="app_name">Fotoapparat</string>
+    <string name="car_name">carName</string>
     <string name="number">Гос. номер: </string>
     <string name="production_year">Год выпуска: </string>
     <string name="category">Категория ТС: </string>
     <string name="steering_wheel_position">Расположение руля: </string>
+    <string name="engine_tipe">Тип двигателя: </string>
+    <string name="engine_power">Мощность двигателя: </string>
+    <string name="engine_capacity">Объём двигателя: </string>
 </resources>
